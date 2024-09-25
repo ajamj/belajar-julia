@@ -31,19 +31,20 @@ Untuk OS selain Windows, silakan buka situs resmi Julia di [https://julialang.or
 md"""
 ## Executable File VS Notebook
 Dalam menuliskan kode bahasa pemrograman Julia, kita bisa menuliskannya dalam bentuk executable ataupun notebook. Perbedaannya:
-* Executable File (.jl):
-	+ Tujuan: Menjalankan program secara keseluruhan, biasanya untuk aplikasi yang siap digunakan.
-	+ Penggunaan: Melalui terminal/command line. Cocok untuk otomatisasi dan distribusi.
-	+ Kelebihan: Cepat dan efisien.
-	+ Kekurangan: Kurang interaktif.
 
-* Notebook:
-	+ Tujuan: Eksplorasi interaktif, analisis data, dan eksperimen kode secara bertahap.
-	Jenis Notebook:
-		1. Jupyter Notebook (.ipynb): Menggunakan Jupyter untuk eksekusi sel kode dan integrasi teks, gambar, atau grafik.
-		2. Pluto Notebook: Lebih ringan, reaktif, otomatis menjalankan ulang sel terkait saat kode berubah.
-	+ Kelebihan: Interaktif, cocok untuk pembelajaran dan dokumentasi.
-	+ Kekurangan: Tidak secepat executable file untuk aplikasi produksi.
+**1. Executable File (.jl)**
++ Tujuan: Menjalankan program secara keseluruhan, biasanya untuk aplikasi yang siap digunakan.
++ Penggunaan: Melalui terminal/command line. Cocok untuk otomatisasi dan distribusi.
++ Kelebihan: Cepat dan efisien.
++ Kekurangan: Kurang interaktif.
+
+**2. Notebook**
++ Tujuan: Eksplorasi interaktif, analisis data, dan eksperimen kode secara bertahap.
++ Jenis Notebook
+  + **Jupyter Notebook (.ipynb)**: Menggunakan Jupyter untuk eksekusi sel kode dan integrasi teks, gambar, atau grafik. Dapat dibuka di VS Code.
+  + **Pluto Notebook (.jl)**: Lebih ringan, reaktif, otomatis menjalankan ulang sel terkait saat kode berubah. Dapat dibuka di browser seperti Google Chrome, Firefox, Safari, dll.
++ Kelebihan: Interaktif, cocok untuk pembelajaran dan dokumentasi.
++ Kekurangan: Tidak secepat executable file untuk aplikasi produksi.
 """
 
 # ╔═╡ 131916ee-dca8-4fa7-8211-92bd0056399f
@@ -144,6 +145,25 @@ md"""
 ### Fungsi
 """
 
+# ╔═╡ 90ff6147-79e1-4af0-8c90-5ac9e19b4f12
+md""" 
+Sintaks dasar untuk membuat fungsi dalam julia adalah sebagai berikut:
+
+```julia
+function nama_fungsi(parameter1, parameter2)
+	...
+	...
+	...
+	return output
+end
+```
+"""
+
+# ╔═╡ 1aac5b0d-4c0d-424d-b468-4f6ac200a5e0
+md"""
+Berikut adalah contoh fungsi untuk mempangkatkan sebuah bilangan dengan parameter a dan b. Output dari fungsi adalah bilangan a dipangkatkan bilangan b.
+"""
+
 # ╔═╡ 93869931-77d1-4f9f-98dc-f7b83e02e2d0
 function pangkat(a,b)
 	return a^b
@@ -168,9 +188,9 @@ bandingkan(10,4)
 
 # ╔═╡ Cell order:
 # ╟─9786fd40-71aa-11ef-23ba-5110b3852151
-# ╠═cdcd9e28-66ad-48d3-9ae0-df1e5d284e7f
+# ╟─cdcd9e28-66ad-48d3-9ae0-df1e5d284e7f
 # ╟─5aa727c1-9c45-42d1-8061-44999877824e
-# ╠═131916ee-dca8-4fa7-8211-92bd0056399f
+# ╟─131916ee-dca8-4fa7-8211-92bd0056399f
 # ╟─04bcd477-1090-453c-8dfb-2ad0f788b60e
 # ╠═50c0a390-d507-4d45-b0cc-ac58999b59cc
 # ╠═28c59882-d3e8-4fd6-9c5d-fac547fb00cf
@@ -184,6 +204,8 @@ bandingkan(10,4)
 # ╟─d916b5dd-297d-4a68-b4ab-635d0ac4621a
 # ╠═36ed0ffb-a79d-4af0-9bbc-259b2c041066
 # ╟─6b56dc9e-bf8a-45de-bca1-d2c9ac3694fe
+# ╟─90ff6147-79e1-4af0-8c90-5ac9e19b4f12
+# ╟─1aac5b0d-4c0d-424d-b468-4f6ac200a5e0
 # ╠═93869931-77d1-4f9f-98dc-f7b83e02e2d0
 # ╠═e08afc09-b660-4874-88d4-32ae3140697a
 # ╠═eecad38b-148b-4fdc-90ee-413df1158ce0
