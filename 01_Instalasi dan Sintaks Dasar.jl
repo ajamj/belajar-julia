@@ -25,7 +25,29 @@ Untuk OS selain Windows, silakan buka situs resmi Julia di [https://julialang.or
 * Beberapa sumber untuk mempelajari bahasa pemrograman Julia bisa dilihat di [https://julialang.org/learning/](https://julialang.org/learning/).
 * Dalam Julia, terdapat **package** yang merupakan kumpulan kode yang dibundel bersama untuk menyediakan fungsionalitas tertentu, seperti fungsi, tipe data, dan modul yang dapat digunakan kembali dalam berbagai proyek. Berbagai package dalam Julia dapat dilihat di laman [https://juliapackages.com/](https://juliapackages.com/).
 * Package **Pluto** juga dapat digunakan sebagai media pengajaran secara interaktif. Contoh penggunaannya dapat dilihat pada modul mata kuliah **Introduction to Computational Thinking** dari **MIT** di alamat [https://computationalthinking.mit.edu/](https://computationalthinking.mit.edu/).
+"""
 
+# ╔═╡ 5aa727c1-9c45-42d1-8061-44999877824e
+md"""
+## Executable File VS Notebook
+Dalam menuliskan kode bahasa pemrograman Julia, kita bisa menuliskannya dalam bentuk executable ataupun notebook. Perbedaannya:
+* Executable File (.jl):
+	+ Tujuan: Menjalankan program secara keseluruhan, biasanya untuk aplikasi yang siap digunakan.
+	+ Penggunaan: Melalui terminal/command line. Cocok untuk otomatisasi dan distribusi.
+	+ Kelebihan: Cepat dan efisien.
+	+ Kekurangan: Kurang interaktif.
+
+* Notebook:
+	+ Tujuan: Eksplorasi interaktif, analisis data, dan eksperimen kode secara bertahap.
+	Jenis Notebook:
+		1. Jupyter Notebook (.ipynb): Menggunakan Jupyter untuk eksekusi sel kode dan integrasi teks, gambar, atau grafik.
+		2. Pluto Notebook: Lebih ringan, reaktif, otomatis menjalankan ulang sel terkait saat kode berubah.
+	+ Kelebihan: Interaktif, cocok untuk pembelajaran dan dokumentasi.
+	+ Kekurangan: Tidak secepat executable file untuk aplikasi produksi.
+"""
+
+# ╔═╡ 131916ee-dca8-4fa7-8211-92bd0056399f
+md"""
 ## Instalasi Pluto Notebook
 Buka terminal Julia, ketikkan:
 ```julia
@@ -146,7 +168,9 @@ bandingkan(10,4)
 
 # ╔═╡ Cell order:
 # ╟─9786fd40-71aa-11ef-23ba-5110b3852151
-# ╟─cdcd9e28-66ad-48d3-9ae0-df1e5d284e7f
+# ╠═cdcd9e28-66ad-48d3-9ae0-df1e5d284e7f
+# ╟─5aa727c1-9c45-42d1-8061-44999877824e
+# ╠═131916ee-dca8-4fa7-8211-92bd0056399f
 # ╟─04bcd477-1090-453c-8dfb-2ad0f788b60e
 # ╠═50c0a390-d507-4d45-b0cc-ac58999b59cc
 # ╠═28c59882-d3e8-4fd6-9c5d-fac547fb00cf
